@@ -1,5 +1,7 @@
 {{DEL:quotable percent=100 trainable}}
 
+[![DEL:quotable trainable](https://img.shields.io/badge/DEL-quotable%20trainable-blue?style=flat-square)](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md)
+
 # Distributed Equity License (DEL) v1.0
 
 Welcome to the official repository of the **Distributed Equity License (DEL)** — a modular, declarative, machine-readable license framework built for the age of AI.
