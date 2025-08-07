@@ -1,4 +1,9 @@
-<!-- {{DEL:quotable trainable percent=100}} -->
+<!-- {{DEL:Licence version=1.0 license_uri=https://github.com/distributed-equity/licence/blob/main/del-v1.0.md copyright_holder="Kevin Ryan, Founder, DistributedEquity.org"}} -->
+<!-- {{DEL:uniquepurpose purpose="To provide a public licensing standard for AI-accessible creative works.}} -->
+<!-- {{DEL:holistic aitraining airetrieval aituning attributable}} -->
+
+
+<!--  {{DEL:quotable percent=100}} -->
 
 # Distributed Equity License (DEL) v1.0
 
@@ -10,8 +15,6 @@
 
 **Attribution Required**: Yes
 
-**Content Hash**: {{to be computed}}
-
 ------
 
 ## 1. Preamble and Purpose
@@ -19,6 +22,8 @@
 This **Distributed Equity License** (“License”) is a legally binding copyright license that allows authors and rights holders (“Licensors”) to declare how their works may be used by others, particularly by automated systems. It is designed to be enforceable internationally under the Berne Convention for the Protection of Literary and Artistic Works, which grants authors exclusive rights to authorize reproduction, adaptation, broadcasting, and other uses of their works. The license combines human‑readable instructions with machine‑readable tags so that both people and artificial intelligence (“AI”) systems can understand and comply with the permissions and restrictions.
 
 By embedding DEL tags into a work, the Licensor grants the public certain rights in the work subject to the terms of this License. **By exercising any rights to a work bearing DEL tags, You accept and agree to be bound by this License.** To the extent this License is interpreted as a contract, the Licensor grants You the rights described herein in consideration of the benefits the Licensor receives from making the work available. The rights granted under this License are irrevocable except as set forth under Section 9 (Termination).
+
+<!--  {{/DEL:quotable}} -->
 
 ## 2. Definitions
 
@@ -54,71 +59,101 @@ The Licensor must include a metadata block within each DEL tag specifying at lea
 
 If a field such as `wallet` is required to enforce a flag (e.g., `micropay`), failure to provide it may affect enforceability of that flag. Unrecognized metadata fields are reserved for future versions and do not affect the terms of this License.
 
-## 5. License Flags and Permissions
+## 5. License Tags and Permissions
+
+### 5.0 Licence
+
+The `Licence` tag is the **required root tag** that wraps all other DEL tags in a licensed work. It declares key metadata fields that ensure clarity, attribution, and global enforceability.
+
+**Required attributes:**
+
+- `version`: the DEL license version in use (e.g. `1.1`)
+- `license_uri`: a canonical URL or IPFS hash pointing to the license text
+- `copyright_holder`: the individual or entity asserting copyright
+
+**Optional attributes:**
+
+- `content_hash`: a SHA or CID hash of the enclosed content for verification
+- `created`: ISO-8601 timestamp when the license was applied
+
+All other permission and scope tags (e.g., `AITraining`, `Quotable`, `Holistic`) must appear within this wrapper.
+
+---
 
 ### 5.1 General Principles
 
-The Licensor may specify one or more **license flags** in the opening DEL tag to grant or withhold specific permissions. Flags are case‑insensitive. **Inner tags override outer tags**; if a portion of a Licensed Work contains nested tags, the innermost tag’s flags control that portion.
+The Licensor may specify one or more license tags in the opening `{{DEL:...}}` block to grant or withhold specific permissions. Tag names are case-insensitive. Inner tags override outer tags; if a portion of a Licensed Work contains nested tags, the innermost tag’s tags control that portion.
+
+**Default Behavior:**
+
+- If a tag exists, its presence implies `permitted: yes` unless `permitted` is explicitly set to `no`.
+- If a tag is **omitted entirely**, then the right is not granted.
+- If `cost_per_kb` and `btc` are not included, permitted use is assumed to be free.
+
+---
 
 ### 5.2 Default Status – All Rights Reserved
 
-If no DEL tags or flags are present, **all rights are reserved**. Use of the work beyond statutory exceptions requires separate permission.
+If no DEL tags or permissions are present, all rights are reserved. Use of the work beyond statutory exceptions requires separate permission.
 
-### 5.3 `trainable`
+### 5.3 AITraining
 
-The `trainable` flag grants You permission to use the enclosed content for training, fine‑tuning, or otherwise improving AI or machine‑learning models. This includes copying the content into datasets and using it to generate derivative models, subject to compliance with this License and any micropayment obligations. **No waiver of moral rights** is implied.
+Allows use of the content for training AI or ML models.
 
-### 5.4 `notrain`
+- Optional fields:
+  - `permitted`: explicitly set to `yes` or `no`
+  - `cost_per_kb`: numeric value (e.g., `0.00005`)
+  - `btc`: Bitcoin address for payment
 
-The `notrain` flag expressly withholds permission to use the enclosed content for AI training or model improvement. This flag overrides any outer `trainable` flag. You may not ingest or incorporate the content into any AI model or training dataset.
+If `AITraining` is present but `permitted` is not defined, it defaults to `yes`.
 
-### 5.5 `summarizable`
+### 5.4 AIRetrieval
 
-The `summarizable` flag grants permission to create automated summaries, translations, or paraphrases of the enclosed content. Summaries must retain the author’s attribution and may not misrepresent the original meaning. This flag does not permit AI training unless `trainable` is also present.
+Allows use in retrieval-augmented generation (RAG), indexing, or embeddings.
 
-### 5.6 `nosummarize`
+- Same optional fields and defaults as `AITraining`.
 
-The `nosummarize` flag prohibits automated summarization, translation, or paraphrasing of the enclosed content. It overrides `summarizable`.
+### 5.5 AITuning
 
-### 5.7 `quotable`
+Allows use of the content to fine-tune or adapt existing AI models.
 
-The `quotable` flag permits the reproduction of short excerpts from the licensed content with proper attribution.
+- Same optional fields and defaults as above.
 
-- **Default limit**: up to **250 words or 10% of the total content**, whichever is less.
-- **AI training** is **not permitted** under `quotable` unless the `trainable` flag is also declared.
-- **Extensive reproduction, adaptation, or summarization** are **not** permitted under this flag alone.
+### 5.6 Summarizable
 
-#### Embedded Tag Attribute: `percent`
+Grants permission to summarize, translate, or paraphrase the content.
 
-Authors may optionally override the default **10%** limit by specifying a `percent` attribute within the inline tag. This enables fine‑grained control over how much of the work may be reused in quotes.
+- Tag presence implies permission unless `permitted: no` is explicitly declared.
 
-Example:
+### 5.7 NoSummarize
 
-```css
-{{DEL:quotable percent=5}}
-This section is licensed to be quoted up to 5% of its length.
-{{/DEL:quotable}}
-```
+Prohibits any form of summarization or paraphrasing. Overrides `Summarizable`.
 
-If the `percent` attribute is used, the numerical value takes precedence over the default 10% rule—but the **absolute limit of 250 words** still applies unless explicitly overridden by an additional `maxwords` tag.
+### 5.8 Quotable
 
-Authors wishing to completely disable quoting should omit the `quotable` flag or use `noai` and `noreuse` together.
+Allows reproduction of short excerpts with attribution.
 
-### 5.8 `noquote`
+- Default: up to 250 words or 10% of total content.
+- Optional: `percent=X`, `maxwords=Y` for overrides.
 
-The `noquote` flag prohibits reproducing any portion of the enclosed content in AI outputs or human publications. It overrides `quotable`.
+### 5.9 NoQuote
 
-### 5.9 `micropay`
+Prohibits any quoting or excerpting. Overrides `Quotable`.
 
-The `micropay` flag requires You to pay a specified micropayment for any use permitted by the other flags (e.g., training or summarization). The metadata must include a `wallet` address and may specify `micropayment_rate` (e.g., per‑kilobyte or per‑token). Failure to pay constitutes a breach of this License (see Section 9). If the `wallet` field is absent, You must contact the Licensor to arrange payment before using the content.
+### 5.10 PublicDomain
 
-### 5.10 `noai`
+Irrevocably releases content to the public domain. Overrides all other tags. Cannot be revoked.
 
-The `noai` flag functions as a shorthand for `notrain`, `nosummarize`, and `noquote`. It prohibits any AI ingestion, training, summarization, or quotation of the enclosed content.
+### 5.11 Holistic
 
-### 5.11 `publicdomain`
+Requires the entire content to be reused in full. Prevents quoting or excerpting unless re-enabled in a nested tag.
 
-The `publicdomain` flag irrevocably dedicates the enclosed content to the public domain worldwide. The Licensor waives all rights to control or monetize the content. This flag overrides all other flags and cannot be revoked.
+### 5.12 UniquePurpose
+
+Asserts that the work was created for a specific purpose and cannot be reused to fulfill the same objective without permission.
+
+- Required: `purpose:` field in metadata.
+- If omitted or blank, the tag is inactive.
 
 ## 6. Inline Tag Specification
 
@@ -145,27 +180,33 @@ metadata (YAML or JSON)
 4. **Unknown Flags**: Unknown flags are reserved for future versions and have no legal effect. Systems must not assume they grant permission.
 5. **Malformed Tags**: If tags are improperly nested or missing closing tags, the rights in the affected content are not granted. Use at Your own risk.
 
-## 7. Attribution and Wallet Provisions
+## 7. Attribution and Payment Provisions
 
 ### 7.1 Attribution Requirements
 
-When You use the Licensed Work in any manner permitted by this License, You must:
+When You use the Licensed Work under the permissions granted by this License, You must:
 
-1. Provide the **author’s name** (or pseudonym) as specified in the metadata;
-2. Identify the title of the work or a description if available;
-3. State that the work is licensed under the “Distributed Equity License v1.0” and provide a link to the license text or include the license URI;
-4. Include the **wallet address** if the `micropay` flag applies and payment is required; and
-5. Keep intact all copyright notices and metadata provided by the Licensor.
+1. Provide the **author’s name** or pseudonym as defined in the `copyright_holder`.
+2. Reference the **title** or description of the work where reasonably available.
+3. Indicate that the work is licensed under the **Distributed Equity License v1.1**, and include a link to the full license text (as specified by `license_uri`).
+4. Keep intact all metadata fields and notices embedded in the DEL tags.
+5. Maintain attribution even in derivative works, summaries, or downstream publications.
 
-Attribution must be provided in a reasonable manner based on the medium (e.g., footnotes, captions, metadata fields, or near the excerpt). Automated systems may include attribution in logs or model documentation if direct display is impractical.
+Attribution must be provided in a manner appropriate to the medium. For digital content, attribution should be visible on the page or in metadata. For embedded or AI use, attribution may be documented in model cards, logs, or provenance chains.
 
-### 7.2 Micropayment Obligations
+---
 
-If the `micropay` flag applies:
+### 7.2 Payment Obligations (Optional)
 
-- You must track the amount of content used (e.g., bytes, tokens) and calculate micropayments using the `micropayment_rate` specified in the metadata or, if unspecified, the default rate published at the license URI.
-- Payment must be made to the wallet address in the metadata at the time of use or within thirty (30) days of use. Failure to pay is a material breach and triggers termination (Section 9).
-- If the wallet address is missing or invalid, You must contact the Licensor using available contact information to arrange payment before using the content.
+If any DEL permission tag (e.g. `AITraining`, `AIRetrieval`, `AITuning`) includes both a `cost_per_kb` field and a valid `btc` wallet address:
+
+- You must **calculate payment** based on the volume of content used (in kilobytes) multiplied by the declared rate.
+- Payment must be made to the provided address either **before** use or within thirty (30) days.
+- If no `cost_per_kb` or wallet address is provided, usage under that tag is permitted **at no cost**.
+
+Failure to comply with declared payment requirements constitutes a material breach of the License and may trigger immediate termination (see Section 9).
+
+If a wallet address is invalid or unreachable, You must contact the Licensor to resolve payment before proceeding with usage that would otherwise require compensation. 
 
 ## 8. Warranties and Disclaimers
 
@@ -181,7 +222,7 @@ To the fullest extent permitted by applicable law, in no event shall the Licenso
 
 ### 9.1 Automatic Termination
 
-This License and the Licensed Rights terminate automatically if You fail to comply with its terms (including failure to pay required micropayments, or violation of `noai`, `notrain`, `nosummarize`, or `noquote` flags). Upon termination, You must immediately cease using the Licensed Work and destroy all copies in Your possession.
+This License and the Licensed Rights terminate automatically if You fail to comply with its terms. This includes, but is not limited to, failure to pay any required micropayments, or violation of any prohibitive tags such as `NoAI`, `NoSummarize`, `NoQuote`, or a `permitted: no` setting under `AITraining`, `AIRetrieval`, or `AITuning`. Upon termination, You must immediately cease all use of the Licensed Work and permanently delete or destroy all copies and derivative materials in Your possession or control.
 
 ### 9.2 Reinstatement
 
@@ -193,13 +234,13 @@ The Licensor retains all rights to pursue legal remedies under applicable law fo
 
 ### 9.4 Survival
 
-Sections pertaining to definitions, warranties, limitations of liability, governing law, attribution, and remedies survive termination of this License).
+Sections pertaining to definitions, warranties, limitations of liability, governing law, attribution, and remedies survive termination of this License.
 
 ## 10. Miscellaneous
 
 ### 10.1 Severability
 
-If any provision of this License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If it cannot be reformed, it shall be severed from this License, and the remaining provisions shall remain in full force and effect).
+If any provision of this License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If it cannot be reformed, it shall be severed from this License, and the remaining provisions shall remain in full force and effect.
 
 ### 10.2 No Waiver
 
@@ -239,5 +280,6 @@ Date: 6 August 2025 (UTC+02:00, Europe/Paris)
 
 **End of License**
 
-<!-- {{/DEL:quotable}} -->
-
+<!-- {{/DEL:holistic}} -->
+<!-- {{/DEL:UniquePurpose}} -->
+<!-- {{/DEL:Licence}} -->
