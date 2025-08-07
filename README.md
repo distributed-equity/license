@@ -109,8 +109,10 @@ The DEL protocol is designed for a future where:
 Suggestions, forks, and community improvements are welcome.  
 Please open an issue or submit a pull request.
 
+---
 
-© 2025 Kevin Ryan, [DistributedEquity.org](https://distributedequity.org)
-Released under the [DEL Licence v1.0](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md)
+© 2025 Kevin Ryan, [DistributedEquity.org](https://distributedequity.org).
+
+Released under the [Distributed Equity License v1.0  ](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md).
 
 <!-- {{/DEL:quotable}} -->
