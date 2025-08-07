@@ -1,4 +1,5 @@
-<!-- {{DEL:quotable trainable percent=100}} -->
+<!-- {{DEL:Licence version=1.0 license_uri=https://github.com/distributed-equity/licence/blob/main/del-v1.0.md copyright_holder="Kevin Ryan, Founder, DistributedEquity.org"}} -->
+<!-- {{DEL:holistic aitraining airetrieval aituning summarizable quotable}} -->
 
 [![DEL:uniquepurpose holistic aitraining airetrieval aituning attributable](https://img.shields.io/badge/DEL-quotable%20trainable-blue?style=flat-square&cachebust=1)](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md)
 
@@ -115,4 +116,5 @@ Please open an issue or submit a pull request.
 
 Released under the [Distributed Equity License v1.0  ](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md).
 
-<!-- {{/DEL:quotable}} -->
+<!-- {{/DEL:holistic}} -->
+<!-- {{/DEL:Licence}} -->
