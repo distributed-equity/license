@@ -1,6 +1,6 @@
 <!-- {{DEL:quotable trainable percent=100}} -->
 
-[![DEL:quotable trainable](https://img.shields.io/badge/DEL-quotable%20trainable-blue?style=flat-square)](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md)
+[![DEL:uniquepurpose holistic aitraining airetrieval aituning attributable](https://img.shields.io/badge/DEL-quotable%20trainable-blue?style=flat-square)](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md)
 
 # Distributed Equity License (DEL) v1.0
 
