@@ -1,4 +1,4 @@
-{{DEL:quotable percent=100 trainable}}
+<!-- {{DEL:quotable trainable percent=100}} -->
 
 # Distributed Equity License (DEL) v1.0
 
@@ -239,4 +239,5 @@ Date: 6 August 2025 (UTC+02:00, Europe/Paris)
 
 **End of License**
 
-{{/DEL:quotable}}
+<!-- {{/DEL:quotable}} -->
+
