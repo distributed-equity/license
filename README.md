@@ -1,4 +1,4 @@
-{{DEL:quotable percent=100 trainable}}
+<!-- {{DEL:quotable trainable percent=100}} -->
 
 [![DEL:quotable trainable](https://img.shields.io/badge/DEL-quotable%20trainable-blue?style=flat-square)](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md)
 
@@ -113,4 +113,4 @@ Please open an issue or submit a pull request.
 © 2025 Kevin Ryan, [DistributedEquity.org](https://distributedequity.org)
 Released under the [DEL Licence v1.0](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md)
 
-{{/DEL:quotable}}
+<!-- {{/DEL:quotable}} -->
