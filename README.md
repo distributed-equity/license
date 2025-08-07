@@ -2,7 +2,7 @@
 <!-- {{DEL:holistic aitraining airetrieval aituning summarizable quotable}} -->
 
 
-[![DEL:holistic aitraining airetrieval aituning summarizable quotable](https://img.shields.io/badge/DEL-quotable%20trainable-blue?style=flat-square&cachebust=1)](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md)
+[![DELv1.0:holistic aitraining airetrieval aituning summarizable quotable](https://img.shields.io/badge/DELv1.0-holistic&nbsp;aitraining&nbsp;airetrieval&nbsp;aituning&nbsp;summarizable&nbsp;quotable-blue?style=flat-square&cachebust=1)](https://github.com/distributed-equity/licence/blob/main/del-v1.0.md)
 
 # Distributed Equity License (DEL) v1.0
 
