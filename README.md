@@ -32,7 +32,7 @@ DEL empowers creators to embed their intent directly into their work using **inl
 ## 🧾 Current Version
 
 **Version**: 1.0  
-**Block ID**: #0001  
+**Block ID**: #0000000001  
 **Filename**: [`del-v1.0.md`](./del-v1.0.md)  
 **Author**: Kevin Ryan, Founder, [DistributedEquity.org](https://distributedequity.org)
 
@@ -86,7 +86,7 @@ DEL content is tracked in versioned blocks.
 
 | Block | Description |
 |-------|-------------|
-| `#0000000000` | The DEL Manifesto *(coming soon)* |
+| `#0000000000` | The DEL Manifesto |
 | `#0000000001` | The DEL License v1.0 — [del-v1.0.md](./del-v1.0.md) |
 | `#0000000002+` | Creative works licensed under DEL by you and others |
 
