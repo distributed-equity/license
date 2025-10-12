@@ -86,13 +86,16 @@ See full definitions in [Section 5 of the license](./del-v1.0.md#5-license-flags
 
 ## 🧱 Block Architecture
 
-DEL content is tracked in versioned blocks.
+DEL content is organized into versioned **Blocks**, providing an optional proof of provenance and ownership.
+
+Each Block represents a formally versioned artifact within the Distributed Equity ecosystem.
 
 | Block | Description |
 |-------|-------------|
-| `#0000000000` | The DEL Manifesto |
-| `#0000000001` | The DEL License v1.0 — [del-v1.0.md](./del-v1.0.md) |
-| `#0000000002+` | Creative works licensed under DEL by you and others |
+| `#0000000000` | **The DEL Manifesto v1.0** — founding principles and intent |
+| `#0000000001` | **The DEL License v1.0** — [del-v1.0.md](./del-v1.0.md) |
+| `#0000000002` | **The DEL Tag Specification v1.0** — technical reference for tag syntax and behavior |
+| `#0000000003+` | **Creative Works** licensed under DEL by creators, publishers, and organizations |
 
 ---
 
