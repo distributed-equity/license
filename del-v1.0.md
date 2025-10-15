@@ -1,7 +1,7 @@
 # Distributed Equity License (DEL) v1.0
 ## Supplementary Terms for AI and Automated Systems
 
-**License**: This license text is itself licensed under CC BY 4.0 and DEL v1.0.
+**License**: This license text is itself licensed under CC BY-NC-ND 4.0 and DEL v1.0.
 
 **Author**: Kevin Ryan, Founder, [DistributedEquity.org](https://distributedequity.org)
 
@@ -767,4 +767,4 @@ This license text is itself licensed under:
 ---
 
 *Version 1.0 | October 2025*  
-*Distributed under CC BY 4.0 + DEL v1.0*
+*Distributed under CC BY-NC-ND 4.0 + DEL v1.0*
