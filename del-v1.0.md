@@ -1,4 +1,4 @@
-<!-- {{DEL:Licence version=1.0 license_uri=https://github.com/distributed-equity/licence/blob/main/del-v1.0.md copyright_holder="Kevin Ryan, Founder, DistributedEquity.org"}} -->
+<!-- {{DEL:License version=1.0 license_uri=https://github.com/distributed-equity/licence/blob/main/del-v1.0.md copyright_holder="Kevin Ryan, Founder, DistributedEquity.org"}} -->
 <!-- {{DEL:uniquepurpose purpose="To provide a public licensing standard for AI-accessible creative works.}} -->
 <!-- {{DEL:holistic aitraining airetrieval aituning attributable}} -->
 
@@ -282,4 +282,4 @@ Date: 6 August 2025 (UTC+02:00, Europe/Paris)
 
 <!-- {{/DEL:holistic}} -->
 <!-- {{/DEL:UniquePurpose}} -->
-<!-- {{/DEL:Licence}} -->
+<!-- {{/DEL:License}} -->
