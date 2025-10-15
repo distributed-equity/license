@@ -1,6 +1,20 @@
 # Distributed Equity License (DEL) v1.0
 ## Supplementary Terms for AI and Automated Systems
 
+---
+**Release Notes - DEL v1.0 (October 15, 2025)**
+
+This is the initial experimental release of the Distributed Equity License framework.
+We welcome feedback, questions, and contributions from the community.
+
+**Status**: Early adoption phase  
+**Stability**: Experimental - API may change in v2.0  
+**Seeking**: Legal review, implementation feedback, adoption reports
+
+See Section 15 for important limitations and disclaimers.
+
+---
+
 **License**: This license text is itself licensed under CC BY-NC-ND 4.0 and DEL v1.0.
 
 **Author**: Kevin Ryan, Founder, [DistributedEquity.org](https://distributedequity.org)
@@ -13,7 +27,7 @@
 
 ## 1. Preamble and Purpose
 
-The **Distributed Equity License v1.0** (“DEL” or “Supplementary Terms”) is designed to work **alongside** existing open licenses—including MIT, Apache 2.0, BSD, GPL, and Creative Commons licenses—to provide machine-readable clarification for AI and automated system usage.
+The **Distributed Equity License v1.0** ("DEL" or "Supplementary Terms") is designed to work **alongside** existing open licenses—including MIT, Apache 2.0, BSD, GPL, and Creative Commons licenses—to provide machine-readable clarification for AI and automated system usage.
 
 DEL v1.0 is **not a standalone license**. It functions as **supplementary metadata** that:
 - Extends and clarifies existing license permissions for AI-specific use cases
@@ -153,7 +167,7 @@ author: "Your Name"
 copyright_holder: "Your Name or Organization"
 license: "MIT"  # Your base license
 license_uri: "https://opensource.org/licenses/MIT"
-del_version: "2.0"
+del_version: "1.0"
 del_uri: "https://github.com/distributed-equity/license/blob/main/del-v1.0.md"
 license_flags:
   - aitraining
@@ -185,7 +199,7 @@ purpose: "Educational resource on widget optimization"
 DEL tags use double-curly-brace syntax for machine readability:
 
 ```
-{{DEL:License version=2.0 license=MIT copyright_holder="Jane Developer"}}
+{{DEL:License version=1.0 license=MIT copyright_holder="Jane Developer"}}
 {{DEL:aitraining airetrieval aituning attributable}}
 
 [Your content here]
@@ -259,7 +273,7 @@ Module documentation
 License: MIT (https://opensource.org/licenses/MIT)
 DEL v1.0 Supplementary Terms Apply
 
-{{DEL:License version=2.0 license=MIT copyright_holder="Your Name"}}
+{{DEL:License version=1.0 license=MIT copyright_holder="Your Name"}}
 {{DEL:aitraining airetrieval attributable}}
 """
 ```
@@ -271,7 +285,7 @@ Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 DEL v1.0 Supplementary Terms: Machine-readable AI permissions below
 -->
 
-<!-- {{DEL:License version=2.0 license="CC BY 4.0" copyright_holder="Author Name"}} -->
+<!-- {{DEL:License version=1.0 license="CC BY 4.0" copyright_holder="Author Name"}} -->
 <!-- {{DEL:aitraining airetrieval aituning attributable quotable}} -->
 ```
 
@@ -279,7 +293,7 @@ DEL v1.0 Supplementary Terms: Machine-readable AI permissions below
 ```html
 <head>
     <meta name="license" content="Apache-2.0">
-    <meta name="del-version" content="2.0">
+    <meta name="del-version" content="1.0">
     <meta name="del-flags" content="aitraining,airetrieval,attributable">
     <meta name="copyright" content="Your Organization">
 </head>
@@ -389,7 +403,7 @@ Example: MIT License
  * Supplementary AI Terms: DEL v1.0
  * https://github.com/distributed-equity/license/blob/main/del-v1.0.md
  * 
- * {{DEL:License version=2.0 license=MIT copyright_holder="Your Name"}}
+ * {{DEL:License version=1.0 license=MIT copyright_holder="Your Name"}}
  * {{DEL:aitraining airetrieval aituning attributable}}
  */
 ```
@@ -427,7 +441,7 @@ When creating derivatives:
 
 **Example derivative declaration:**
 ```yaml
-{{DEL:License version=2.0 license="MIT" 
+{{DEL:License version=1.0 license="MIT" 
   copyright_holder="Original Author, Modified by Your Name"
   original_work="https://example.com/original"
   derived_date="2025-10-15"}}
@@ -594,7 +608,7 @@ Future DEL versions will maintain backwards compatibility with v1.0 tag syntax. 
  * Base License: MIT (https://opensource.org/licenses/MIT)
  * AI Terms: DEL v1.0 Supplementary Terms
  * 
- * {{DEL:License version=2.0 license=MIT copyright_holder="Jane Developer"}}
+ * {{DEL:License version=1.0 license=MIT copyright_holder="Jane Developer"}}
  * {{DEL:aitraining airetrieval aituning attributable quotable}}
  */
 
@@ -613,7 +627,7 @@ function optimizeWidget(config) {
  * http://www.apache.org/licenses/LICENSE-2.0
  * 
  * DEL v1.0 Supplementary Terms:
- * {{DEL:License version=2.0 license="Apache-2.0" copyright_holder="Tech Corp"}}
+ * {{DEL:License version=1.0 license="Apache-2.0" copyright_holder="Tech Corp"}}
  * {{DEL:aitraining airetrieval attributable micropay cost_per_kb=0.00001 btc="bc1q..."}}
  */
 ```
@@ -629,7 +643,7 @@ license: "CC BY 4.0 + DEL v1.0"
 ---
 
 <!-- Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ -->
-<!-- {{DEL:License version=2.0 license="CC BY 4.0" copyright_holder="Dr. Sarah Chen"}} -->
+<!-- {{DEL:License version=1.0 license="CC BY 4.0" copyright_holder="Dr. Sarah Chen"}} -->
 <!-- {{DEL:aitraining airetrieval aituning attributable quotable summarizable}} -->
 
 # Complete Guide to Machine Learning
@@ -650,7 +664,7 @@ it under the terms of the GNU General Public License v3.0.
 https://www.gnu.org/licenses/gpl-3.0.html
 
 DEL v1.0 Supplementary Terms for AI:
-{{DEL:License version=2.0 license="GPL-3.0" copyright_holder="FSF, Inc."}}
+{{DEL:License version=1.0 license="GPL-3.0" copyright_holder="FSF, Inc."}}
 {{DEL:airetrieval attributable}}
 Note: AI-generated derivatives must maintain GPL-3.0 license
 """
@@ -667,7 +681,7 @@ Base License: CC BY-NC 4.0 (Non-Commercial)
 https://creativecommons.org/licenses/by-nc/4.0/
 
 DEL v1.0 AI Terms:
-{{DEL:License version=2.0 license="CC BY-NC 4.0" copyright_holder="Alex Writer"}}
+{{DEL:License version=1.0 license="CC BY-NC 4.0" copyright_holder="Alex Writer"}}
 {{DEL:airetrieval attributable noncommercial notraining quotable}}
 
 AI may retrieve and quote, but not train commercially.
@@ -707,31 +721,40 @@ Best practices:
 - Keep payment information current
 - Document your licensing choices
 
-### 14.4 Community and Support
-
-- **Documentation**: https://github.com/distributed-equity/license
-- **Discussions**: GitHub Issues and Discussions
-- **Reference Implementation**: See repository for parser code
-- **License Chooser Tool**: (Coming soon)
-
 ---
 
 ## 15. Legal Status and Limitations
 
-DEL v1.0 is an experimental framework. While we believe these 
-supplementary terms are legally sound, they have not been tested 
-in court. 
+**IMPORTANT: DEL v1.0 is an experimental framework in early adoption phase.**
+
+While we believe these supplementary terms are legally sound, they have not been 
+tested in court. Legal enforceability may vary significantly by jurisdiction.
 
 **We make no guarantees about:**
 - Enforceability in any specific jurisdiction
-- AI company compliance
+- AI company compliance with DEL tags
 - Legal outcomes in disputes
+- Compatibility with all base license interpretations
+- Recognition by courts or regulatory bodies
 
-**This is not legal advice.** Consult an attorney for your specific situation.
+**This is not legal advice.** Consult an attorney familiar with intellectual 
+property and AI law for your specific situation.
 
-We will update DEL based on real-world usage, legal developments, 
-and community feedback. Breaking changes will trigger major version 
-increments.
+**Experimental Nature:**
+- DEL v1.0 represents our best understanding of AI licensing needs as of October 2025
+- Legal frameworks for AI training and fair use are rapidly evolving
+- Court precedents may clarify or contradict aspects of this framework
+- We will update DEL based on real-world usage, legal developments, and community feedback
+
+**Commitment to Improvement:**
+- Breaking changes will trigger major version increments (v2.0, v3.0)
+- We will provide migration paths for version updates
+- Critical issues will be addressed in patch releases (v1.1, v1.2)
+
+**If you have legal concerns or questions:**
+Please open an issue on GitHub or contact us directly before applying DEL to your work.
+
+---
 
 ## 16. Forward Compatibility Promise
 
@@ -740,7 +763,28 @@ increments.
 - Major versions (v2.0, v3.0) may change semantics
 - We will provide migration guides for breaking changes
 
-## 17. Signature and Authenticity
+---
+
+## 17. Community and Adoption
+
+**Current Status**: Early adoption phase (v1.0 launched October 2025)
+
+We're seeking:
+- Feedback from content creators and developers
+- Implementation reports from AI companies
+- Legal review and analysis
+- Community discussion on improvements
+
+**Join the conversation:**
+- **GitHub**: https://github.com/distributed-equity/license
+- **Discussions**: GitHub Issues and Discussions
+- **Email**: contact@distributedequity.org
+
+Version 2.0 will incorporate lessons learned from real-world usage.
+
+---
+
+## 18. Signature and Authenticity
 
 ```yaml
 Document: Distributed Equity License (DEL) v1.0 - Extension Framework
@@ -791,4 +835,4 @@ This license text is itself licensed under:
 ---
 
 *Version 1.0 | October 2025*  
-*Distributed under CC BY-NC-ND 4.0 + DEL v1.0*
+*Distributed under CC BY-NC-ND 4.0 
