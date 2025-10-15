@@ -716,7 +716,31 @@ Best practices:
 
 ---
 
-## 15. Signature and Authenticity
+## 15. Legal Status and Limitations
+
+DEL v1.0 is an experimental framework. While we believe these 
+supplementary terms are legally sound, they have not been tested 
+in court. 
+
+**We make no guarantees about:**
+- Enforceability in any specific jurisdiction
+- AI company compliance
+- Legal outcomes in disputes
+
+**This is not legal advice.** Consult an attorney for your specific situation.
+
+We will update DEL based on real-world usage, legal developments, 
+and community feedback. Breaking changes will trigger major version 
+increments.
+
+## 16. Forward Compatibility Promise
+
+- v1.x tags will remain parseable in all future versions
+- New flags will be additive, not breaking
+- Major versions (v2.0, v3.0) may change semantics
+- We will provide migration guides for breaking changes
+
+## 17. Signature and Authenticity
 
 ```yaml
 Document: Distributed Equity License (DEL) v1.0 - Extension Framework
@@ -728,7 +752,7 @@ Version Hash: [To be computed upon finalization]
 ```
 
 This license text is itself licensed under:
-- **CC BY 4.0**: https://creativecommons.org/licenses/by/4.0/
+- **CC BY-NC-ND 4.0**: https://creativecommons.org/licenses/by-nc/4.0/
 - **DEL v1.0 Supplementary Terms** with flags: `aitraining airetrieval aituning attributable quotable holistic`
 
 ---
