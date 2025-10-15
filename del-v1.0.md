@@ -13,7 +13,7 @@
 
 ## 1. Preamble and Purpose
 
-The **Distributed Equity License v1.0** is designed to work **alongside** existing open licenses—including MIT, Apache 2.0, BSD, GPL, and Creative Commons licenses—to provide machine-readable clarification for AI and automated system usage.
+The **Distributed Equity License v1.0** (“DEL” or “Supplementary Terms”) is designed to work **alongside** existing open licenses—including MIT, Apache 2.0, BSD, GPL, and Creative Commons licenses—to provide machine-readable clarification for AI and automated system usage.
 
 DEL v1.0 is **not a standalone license**. It functions as **supplementary metadata** that:
 - Extends and clarifies existing license permissions for AI-specific use cases
