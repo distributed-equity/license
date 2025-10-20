@@ -6,7 +6,7 @@
 ## Supplementary Terms for AI and Automated Systems
 
 ---
-**Release Notes - DEL v1.0 (October 15, 2025)**
+**Release Notes - DEL v1.0**
 
 This is the initial experimental release of the Distributed Equity License framework.
 We welcome feedback, questions, and contributions from the community.
