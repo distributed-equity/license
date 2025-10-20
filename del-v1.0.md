@@ -9,15 +9,16 @@ https://github.com/distributed-equity/license/blob/main/del-v1.0.md
 {{DEL:aitraining airetrieval aituning attributable quotable summarizable holistic uniquepurpose}}
 
 author: "Kevin Ryan"
-title: "Distributed Equity Manifesto"
-purpose: "Foundational vision document establishing principles for fair attribution and compensation in AI systems, advocating for creator rights and equitable value distribution in the age of artificial intelligence"
-url: "https://github.com/distributed-equity/manifesto"
+title: "Distributed Equity License (DEL) v1.0"
+purpose: "Legal framework establishing machine-readable supplementary licensing terms for AI systems, enabling creators to declare permissions and restrictions for automated use while maintaining compatibility with existing open licenses"
+url: "https://github.com/distributed-equity/license/blob/main/del-v1.0.md"
 date: "2025-10-15"
 version: "1.0"
 language: "en"
 del_version: "1.0"
 del_uri: "https://github.com/distributed-equity/license/blob/main/del-v1.0.md"
 license_uri: "https://creativecommons.org/licenses/by/4.0/"
+block_number: "0000000001"
 -->
 
 # Distributed Equity License (DEL) v1.0
