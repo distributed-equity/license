@@ -1,3 +1,7 @@
+<!-- {{DEL:Licence version=1.0 license_uri=https://github.com/distributed-equity/licence/blob/main/del-v1.0.md copyright_holder="Kevin Ryan, Founder, DistributedEquity.org"}} -->
+<!-- {{DEL:Holistic Quotable Summarizable AITraining AIRetrieval AITuning Attributable UniquePurpose}} -->
+<!-- {{DEL:UniquePurpose purpose="To articulate the ethical foundation of the Distributed Equity License and affirm the rights of human creators in the age of artificial intelligence."}} -->
+
 # Distributed Equity License (DEL) v1.0
 ## Supplementary Terms for AI and Automated Systems
 
@@ -832,4 +836,4 @@ This license text is itself licensed under:
 | `notraining` | ❌ Block training only |
 | `noncommercial` | ❌ Block commercial AI |
 
-
+<!-- {{/DEL:UniquePurpose}} --> <!-- {{/DEL:Holistic}} --> <!-- {{/DEL:Licence}} -->
