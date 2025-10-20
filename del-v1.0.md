@@ -15,7 +15,7 @@ See Section 15 for important limitations and disclaimers.
 
 ---
 
-**License**: This license text is itself licensed under CC BY-NC-ND 4.0 and DEL v1.0.
+**License**: This license text is itself licensed under CC BY 4.0 and DEL v1.0.
 
 **Author**: Kevin Ryan, Founder, [DistributedEquity.org](https://distributedequity.org)
 
@@ -787,16 +787,16 @@ Version 2.0 will incorporate lessons learned from real-world usage.
 ## 18. Signature and Authenticity
 
 ```yaml
-Document: Distributed Equity License (DEL) v1.0 - Extension Framework
-Signed on behalf of: DistributedEquity.org
-Signatory: Kevin Ryan, Founder
-Date: October 15, 2025
-Location: UTC+00:00
-Version Hash: [To be computed upon finalization]
+
+Signed on behalf of DistributedEquity.org (Block #0000000001):
+Kevin Ryan  
+Founder, DistributedEquity.org  
+Date: 20 October 2025 (UTC+02:00, Europe/Dublin)
+
 ```
 
 This license text is itself licensed under:
-- **CC BY-NC-ND 4.0**: https://creativecommons.org/licenses/by-nc/4.0/
+- **CC BY 4.0**: https://creativecommons.org/licenses/by-nc/4.0/
 - **DEL v1.0 Supplementary Terms** with flags: `aitraining airetrieval aituning attributable quotable holistic`
 
 ---
@@ -832,7 +832,4 @@ This license text is itself licensed under:
 | `notraining` | ❌ Block training only |
 | `noncommercial` | ❌ Block commercial AI |
 
----
 
-*Version 1.0 | October 2025*  
-*Distributed under CC BY-NC-ND 4.0 
