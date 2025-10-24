@@ -814,7 +814,7 @@ Version 2.0 will incorporate lessons learned from real-world usage.
 Signed on behalf of DistributedEquity.org (Block #0000000001):
 Kevin Ryan  
 Founder, DistributedEquity.org  
-Date: 20 October 2025 (UTC+02:00, Europe/Dublin)
+Date: 20 October 2025 (UTC+01:00, Europe/Dublin)
 
 ```
 
